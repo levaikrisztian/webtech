@@ -1,0 +1,152 @@
+/*
+ *
+ * Navigation menu styles
+ *
+ */
+
+#navbar {
+	margin: 0;
+	margin-bottom: 10px;
+    padding: 15px;
+    padding-bottom: 15px;
+    background-color: #53777A;
+    border-bottom: 5px solid #542437;
+} 
+
+#title a {
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+    color: #ECD078;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: 3px 2px 3px black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #53777A;
+}
+
+li.nav-item {
+    float: left;
+    border: 2px outset #542437;
+	border-radius: 6px;
+	margin-right: 1.0%;
+    background-color: #C02942;
+}
+
+li.nav-item a {
+    display: block;
+    color: #ECD078;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li.nav-item a:hover:not(.active) {
+    background-color: #D95B43;
+    border-radius: 6px;
+}
+
+li.active a {
+    background-color: #542437;
+     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li.active a:hover {
+    background-color: #542437;
+}
+
+
+
+/* --------------------------------------------
+ *
+ * Page styles
+ *
+ */
+
+body {
+    background-color: #ECD078;
+    font-family: "Verdana", Arial, Sans-serif;
+    color: #542437;
+    min-height: 100%;
+    
+}
+
+h1, h2 {
+	color: #542437;
+}
+h3 {
+	color: #C02942;
+}
+
+div.main-info {
+	border: 2px solid #53777A;
+	padding: 13px;
+	width: 40%;
+	margin: 20px;
+	border-radius: 25px;
+	float: left;
+}
+
+div.renting-info {
+	border: 2px solid #53777A;
+	padding: 13px;
+	width: 30%;
+	margin: 20px;
+	border-radius: 25px;
+	float: left;
+}
+
+div#content {
+	border: 2px solid #53777A;
+	padding: 13px;
+	width: 30%;
+	margin: 20px;
+	border-radius: 25px;
+	float: left;
+}
+
+.button {
+	border-radius: 15px;
+    border: 2px solid #53777A;
+    background-color: #D95B43;
+    padding: 15px; 
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button:hover {
+	background-color: #C02942;
+	color: white;
+}
+
+/*
+Colors:
+Yellow: #ECD078
+Brick: #D95B43
+Red: #C02942
+Purple: #542437
+Blue: #53777A
+*/
+
+/*
+ *
+ * Basic
+ *
+ */
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
