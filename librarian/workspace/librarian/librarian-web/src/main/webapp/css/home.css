@@ -56,7 +56,7 @@ li.nav-item a:hover:not(.active) {
 
 li.active a {
     background-color: #542437;
-     text-align: center;
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-weight: bold;
@@ -66,7 +66,20 @@ li.active a:hover {
     background-color: #542437;
 }
 
+.button {
+	border-radius: 15px;
+    border: 2px solid #53777A;
+    background-color: #D95B43;
+    padding: 15px; 
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
 
+.button:hover {
+	background-color: #C02942;
+	color: white;
+}
 
 /* --------------------------------------------
  *
@@ -110,25 +123,182 @@ div.renting-info {
 div#content {
 	border: 2px solid #53777A;
 	padding: 13px;
-	width: 30%;
-	margin: 20px;
+	width: 80%;
+	margin-top: 20px;
+	margin-left: 9%;
+	margin-right: 10%;
+	margin-bottom: 100px;
 	border-radius: 25px;
 	float: left;
 }
 
-.button {
-	border-radius: 15px;
-    border: 2px solid #53777A;
-    background-color: #D95B43;
-    padding: 15px; 
-    width: 200px;
-    text-align: center;
-    font-weight: bold;
+/* 
+ *
+ * Data holding table
+ *
+ */
+
+.data-table {
+	border: 1px solid #542437;
+	padding: 5px;
+	border-collapse: collapse;
+	width: 100%;
 }
 
-.button:hover {
+.data-table td,th{
+	border: 2px solid #542437;
+	margin: -1px;
+	padding: 14px;
+	text-align: left;
+	width: 25%;
+	
+}
+
+tbody {
+	cursor:pointer;
+}
+
+.data-table th{
+	background-color: #53777A;
+	color: #ECD078;
+}
+
+.data-table tr:hover {background-color: #D95B43;}
+
+/* 
+ *
+ * Done and cancel button
+ *
+ */
+
+.new-author {
+	width:100%;
+	padding: 10px;
+	background-color: #53777A;
+	color: #ECD078;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.done-button {
+	width:20%;
+	margin:auto;
+	padding: 10px;
+	background-color: #D95B43;
+	color: #ECD078;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-top: 10px;
+	float: right;
+}
+
+.cancel-button {
+	width:20%;
+	margin:auto;
+	padding: 10px;
+	background-color: #53777A;
+	color: #ECD078;
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-top: 10px;
+	float: left;
+}
+
+.update-button-container {
+	width:80%;
+	position: absolute;
+	left:10%;
+    top:100px;
+	
+}
+
+/* 
+ *
+ * Inputs
+ *
+ */
+
+.input-table {
+	border: 1px solid #542437;
+	border-top: 0px solid #542437;
+	padding: 5px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.input-table td{
+	border: 2px solid #542437;
+	border-top: 0px solid #542437;
+	margin: -1px;
+	padding: 0px;
+	text-align: left;
+	width: 25%;
+}
+
+.selected-for-update td{
+	margin: -1px;
+	padding: 0px;
+	width: 25%;
+	background-color: #D95B43;
+}
+
+input {
+	width: 85%;
+	padding: 10px;
+	margin: 4px;
+	font-family:courier;
+    font-size:80%;
+    border: 1px solid #53777A;
+    float: left;
+}
+
+select {
+	width: 93%;
+	padding: 10px;
+	margin: 4px;
+	font-family:courier;
+    font-size:80%;
+    border: 1px solid #53777A;
+    float: left;
+    background-color: white;
+}
+
+/*
+ *
+ * User Action response messages
+ *
+ */
+
+.message-box {
+	position: fixed;
+	bottom: 60px;
+	left: 35%;
+	width: 30%;
+	height: 50px;
+	background-color: #53777A;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	padding: 20px;
+	padding-top: 50px;
+	border-radius: 17px;
+	color: #ECD078;
+	font-size: 1.4em;
+	font-weight: bold;
+	border: 3px solid #542437;
+	box-shadow: 8px 8px 4px #888888;
+	text-shadow: 3px 2px 1px black;
+}
+
+.failure {
 	background-color: #C02942;
-	color: white;
+	display: none;
+	padding-top: 25px;
+}
+
+.success {
+	display: none;
 }
 
 /*

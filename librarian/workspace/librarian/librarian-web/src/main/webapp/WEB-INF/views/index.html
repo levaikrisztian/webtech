@@ -6,53 +6,32 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			var cars = ['trabant', 'opel', 'honda'];
-			var list = $('<ol></ol>');
-			$.each(cars, function(carKey, carValue){
-				$(list).append('<li>' + carValue + '</li>');
-			});
-			$('#content').append(list);
-			
-			
-			
-		});
-	</script>
+	<script src="js/app.js"></script>
 	
 </head>
 <body>
 	<div id="navbar">
 		<ul>
-			<li id="title"><a href="index"> Librarian - TSM9WB</a></li>
-			<li class="nav-item active"><a href="index">Home</a></li>
-			<li class="nav-item"><a href="about">About</a></li>
-			<li class="nav-item"><a href="about">Rent</a></li>
-			<li class="nav-item"><a href="about">Browse</a></li>
-			<li class="nav-item"><a href="about">Contact</a></li>
+			<li id="title"><a href="#/index"> Librarian - TSM9WB</a></li>
+			<li id = "home" class="nav-item active"><a href="#/home">Home</a></li>
+			<li id = "about" class="nav-item"><a href="#/about">About</a></li>
+			<li id = "authors" class="nav-item"><a href="#/authors">Authors</a></li>
+			<li id = "books" class="nav-item"><a href="#/books">Books</a></li>
+			<li id = "contact" class="nav-item"><a href="#/contact">Contact</a></li>
 		</ul>
 	</div>
-	<div class="main-info">
-		<h2>About</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-			hendrerit scelerisque elit, a elementum est vestibulum quis. Sed
-			accumsan eget odio sed malesuada. Nunc vehicula ligula non odio
-			lobortis viverra. Curabitur vel tempor odio, sit amet mattis magna.
-			Quisque mollis magna nulla, in condimentum mi imperdiet nec. Nulla
-			facilisi. Pellentesque vestibulum metus vel enim cursus, sit amet
-			eleifend odio convallis. Fusce luctus purus at hendrerit pulvinar.
-			Mauris sagittis mattis odio, eget tincidunt lectus feugiat eu. Morbi
-			tortor nulla, accumsan id laoreet sed, cursus ac eros. Nulla pharetra
-			dui nibh, vel aliquet justo malesuada sed.</p>
-	</div>
-	<div class="renting-info">
-		<h2>Rent a book!</h2>
-		<div >
-			<button class="button">Click here </button>
-		</div>
-	</div>
+	
 	<div id="content">
 	
+	</div>
+	
+	
+	<div class="message-box success">
+		Addition Successful
+	</div>
+
+	<div class="message-box failure">
+		Error creating new Author. 
 	</div>
 
 </body>

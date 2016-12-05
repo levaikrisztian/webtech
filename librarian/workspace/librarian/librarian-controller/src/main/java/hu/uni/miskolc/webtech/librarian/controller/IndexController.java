@@ -16,9 +16,9 @@ public class IndexController {
 		return result;
 	}
 	
-	@RequestMapping("/about")
+	@RequestMapping("/thing")
 	public ModelAndView aboutPage(){
-		ModelAndView result = new ModelAndView("about");
+		ModelAndView result = new ModelAndView("index");
 		return result;
 	}
 	
